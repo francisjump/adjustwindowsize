@@ -4,7 +4,8 @@ import pygetwindow as gw
 import os
 import time
 
-time.sleep(5)
+print("Wait for several seconds to open the application automatically...")
+time.sleep(15)
 all_list = gw.getAllTitles()
 # print(all_list)
 system_application_list = ['Settings','Windows Input Experience','PDSTYLEAGENT','Program Manager','Realtek Audio Console','ZPToolBarParentWnd']
@@ -76,120 +77,4 @@ while (count == 1):
         print("Your default setting has been successfully updated!")
     else:
         print("You type wrongly. Please try again.")
-
-
-
-
-
-
-
-    
-
-# all_list = gw.getAllTitles()
-# # print(all_list)
-# system_application_list = ['安裝程式','Windows 輸入體驗','PDSTYLEAGENT','Program Manager','Realtek Audio Console','ZPToolBarParentWnd']
-
-# while('' in all_list):
-#     all_list.remove('')
-
-# user_application_list = [x for x in all_list if (x not in system_application_list)]
-# print(user_application_list)
-
-# if (os.stat("info.txt").st_size) == 0:
-#     for i in range(1,len(user_application_list)):
-#         target = gw.getWindowsWithTitle(user_application_list[i])[0]
-#         with open("info.txt", "a") as f:
-#             f.write(user_application_list[i])
-#             f.write("\n")
-#             f.write(str(target.width))
-#             f.write("\n")
-#             f.write(str(target.height))
-#             f.write("\n")
-#             f.write(str(target.left))
-#             f.write("\n")
-#             f.write(str(target.top))
-#             f.write("\n")
-#             print(target.size)
-#             print(target.width,target.height)
-#             print(target.topleft)
-#             print(target.left,target.top)
-#     f.close()
-
-# all_list = gw.getAllTitles()
-# # print(all_list)
-# system_application_list = ['安裝程式','Windows 輸入體驗','PDSTYLEAGENT','Program Manager','Realtek Audio Console','ZPToolBarParentWnd','Francis是豬 | Francis is a PIG!!! - Discord']
-
-# while('' in all_list):
-#     all_list.remove('')
-
-# user_application_list = [x for x in all_list if (x not in system_application_list)]
-# print(user_application_list)
-
-# for i in range(1,len(user_application_list)):
-#     target = gw.getWindowsWithTitle(user_application_list[i])[0]
-#     with open("info.txt", "a") as f:
-#         f.write(user_application_list[i])
-#         f.write("\n")
-#         f.write(str(target.width) + ',' + str(target.height) + ',' + str(target.left) + ',' + str(target.top))
-#         f.write("\n")
-#     print(target.size)
-#     print(target.width,target.height)
-#     print(target.topleft)
-#     print(target.left,target.top)
-
-
-
-# target = gw.getWindowsWithTitle(user_application_list[1])[0]
-# print(target.topleft)
-# print(target.size)
-# target.resizeTo(600, 860)
-# hwnd = win32gui.FindWindow(None, user_application_list[2])
-# win32gui.SetWindowPos(hwnd, win32con.HWND_TOPMOST, 600,300,600,600, win32con.SWP_SHOWWINDOW)
-
-
-
-
-# hwnd = win32gui.FindWindow(None, user_application_list[3])
-# title = win32gui.GetWindowText(hwnd)
-# left, top, right, bottom = win32gui.GetWindowRect(hwnd)
-# print(left, top, right, bottom)
-# win32gui.SetWindowPos(hwnd, win32con.HWND_TOPMOST, 600,300,600,600, win32con.SWP_SHOWWINDOW)
-
-
-# target = gw.getWindowsWithTitle(user_application_list[1])[0]
-# print(target.size)
-# target.moveTo(500, 1000)
-# for i in range(len(user_application_list)):
-#     target = gw.getWindowsWithTitle(user_application_list[i])[0]
-#     print(target.size)
-    # if len(user_application_list) == 1:
-    #     target.maximize()
-    # if len(user_application_list) == 2:
-    #     if i == 0:
-
-# # Initializing the wmi constructor
-# f = wmi.WMI()
-  
-# flag = 0
-  
-# # Iterating through all the running processes
-# for process in f.Win32_Process():
-#     print (process.Name)
-#     if "microsoft" == process.Name:    
-#         print("Application is Running")
-#         flag = 1
-#         target = gw.getWindowsWithTitle('Google')[0]
-#         target.maximize()
-#         print(target.isMaximized)
-#         target.restore()
-#         print(target.size)
-#         target.resizeTo(600, 860)
-#         print(target.size)
-#         break
-  
-# if flag == 0:
-#  print("Application is not Running")
-
-# # import pygetwindow
-# # win = pygetwindow.getWindowsWithTitle('Notepad')[0]
-# # win.size = (640, 400)
+        
