@@ -5,7 +5,7 @@ import os
 import time
 
 print("Wait for several seconds to open the application automatically...")
-time.sleep(15)
+time.sleep(20)
 all_list = gw.getAllTitles()
 # print(all_list)
 system_application_list = ['Settings','Windows Input Experience','PDSTYLEAGENT','Program Manager','Realtek Audio Console','ZPToolBarParentWnd']
