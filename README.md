@@ -4,4 +4,4 @@
 3. In command prompt, type "pip install -r requirements.txt". (if you are not the first-time user, please skip step 3.)
 4. Type "python adjustwindowsize_program.py" in command prompt to run the program.
 
-# For further information, please visit the instruction document in https://hot.comp.polyu.edu.hk/ website.
+For further information, please visit the instruction document in https://hot.comp.polyu.edu.hk website.
